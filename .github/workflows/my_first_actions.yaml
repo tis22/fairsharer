@@ -25,7 +25,7 @@ jobs:
       pip install -r requirements.txt
   - name: Lint with Ruff
     run: |
-      ruff src/fairsharer.py
+      ruff check src/
   - name: Test with pytest
     run: |
       pytest
